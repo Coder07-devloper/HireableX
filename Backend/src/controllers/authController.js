@@ -3,6 +3,25 @@ const bcrypt = require("bcryptjs")
 const jwt = require("jsonwebtoken")
 const tokenBlackListModel = require("../models/blacklistModel")
 
+/**
+ * @description Returns cookie options that work for both local development and deployed HTTPS environments.
+ * @param {import("express").Request} req
+ * @returns {{ httpOnly: boolean, sameSite: "lax" | "none", secure: boolean, maxAge: number }}
+ */
+function getCookieOptions(req) {
+    const isSecureRequest =
+        req.secure ||
+        req.headers["x-forwarded-proto"] === "https" ||
+        req.headers.origin?.startsWith("https://")
+
+    return {
+        httpOnly: true,
+        sameSite: isSecureRequest ? "none" : "lax",
+        secure: Boolean(isSecureRequest),
+        maxAge: 24 * 60 * 60 * 1000
+    }
+}
+
 //------------------------------------------------------------------------------------------------------//
 
 // Creating a register controller
@@ -51,7 +70,7 @@ async function registerUserController(req, res){
     )
 
     //setting this token into cookie
-    res.cookie("token", token)
+    res.cookie("token", token, getCookieOptions(req))
 
     res.status(201).json({  // "201" code is used generally when we're creating a new resource and here in backend's language user is also a resource 
         message: "User created successfully",
@@ -102,7 +121,7 @@ async function loginUserController(req, res){
         {expiresIn: "1d"}
     )
 
-    res.cookie("token", token)
+    res.cookie("token", token, getCookieOptions(req))
     res.status(200).json({
         message : "User loggedIn Successfully",
         user: {
@@ -130,7 +149,7 @@ async function logoutUserController(req, res){
         await tokenBlackListModel.create({token}) //blacklisting the model
     }
 
-    res.clearCookie("token")
+    res.clearCookie("token", getCookieOptions(req))
 
     res.status(200).json({
         message : "User logged out successfully"
