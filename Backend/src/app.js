@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json()) // middleware that allows to read the data inside the req.body.
 app.use(cookieParser())
 app.use(cors({
-    origin: "https://hireable-x.vercel.app/",
+    origin: "https://hireable-x.vercel.app",
     credentials: true
 }))
 
