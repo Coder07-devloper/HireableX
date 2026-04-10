@@ -2,6 +2,15 @@
 
 HireableX is an AI-powered interview preparation platform that helps users transform a target job description into a structured interview strategy and an ATS-friendly resume. It combines modern frontend engineering with backend AI orchestration to create a focused, practical, and recruiter-aligned workflow.
 
+## 🌐 Live Demo
+
+Frontend: https://hireable-x.vercel.app/ 
+Backend: https://hireablex.onrender.com  
+
+## 📸 Project Preview
+
+![Landing Page](public/landing-page.png)
+
 ## What It Does ✨
 
 - Generates a personalized interview report from:
