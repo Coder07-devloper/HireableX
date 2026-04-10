@@ -8,9 +8,12 @@ Frontend: https://hireable-x.vercel.app/
 
 Backend: https://hireablex.onrender.com  
 
+
 ## 📸 Project Preview
 
-![Landing Page](Frontend/public/landing-page.png)
+<p align="center">
+  <img src="Frontend/landing-page.png" width="800"/>
+</p>
 
 ## What It Does ✨
 
