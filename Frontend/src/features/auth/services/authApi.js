@@ -2,7 +2,7 @@ import axios from "axios"
 // axios is used for api-caling
 
 const api = axios.create({
-    baseURL: "http://localhost:3000", 
+    baseURL: "https://hireablex.onrender.com", 
     withCredentials: true
 })
 
