@@ -5,11 +5,12 @@ HireableX is an AI-powered interview preparation platform that helps users trans
 ## 🌐 Live Demo
 
 Frontend: https://hireable-x.vercel.app/ 
+
 Backend: https://hireablex.onrender.com  
 
 ## 📸 Project Preview
 
-![Landing Page](public/landing-page.png)
+![Landing Page](Frontend/public/landing-page.png)
 
 ## What It Does ✨
 
