@@ -1,0 +1,35 @@
+Project Core Concept:
+A full-stack, AI-powered job preparation platform (MERN stack + Gemini AI) that acts as a comprehensive career assistant. The application enables users to upload their resumes to be parsed and analyzed against specific job descriptions. 
+
+Key Features:
+Skill Gap Detection: Uses Gemini AI to identify discrepancies between a user's resume and job requirements.
+Interview Preparation: Generates personalized, AI-powered interview questions based on the candidate's profile and the target job description.
+ATS-Optimized Content: Assists in crafting professional, applicant tracking system-friendly content.
+Dynamic PDF Generation: Uses Puppeteer to automatically convert AI-generated career documents into professionally formatted, ready-to-download PDFs.
+
+Target Audience: Job seekers looking for a competitive edge in the hiring process through automated,  suggest me some unique names for this project 
+
+
+
+UNDERSTANDING THE FOLDER STRUCTURE IN FRONTEND
+
+4 layers architecture
+
+UI 
+=> folders(components, pages)
+-> Role of UI layer-> User ko kya UI dikhega and navigation handle karna
+
+Hook
+=> folders(hooks)
+=>Role -> used for managing state and Api layers.
+
+State
+=> files(authContext.jsx, aiContext.jsx)
+=>Role -> User ka jo data humein frontend pe dikhana hai(name, description etc) ko store karne ke liye ye layer use hoti hai. Basically user ke data ke state ko manage karne ke liye ye layer responsible hoti h.
+
+Api
+=> folder(services(file->authApi.js))
+->Role -> frontend backend se kaise communicate karega i.e. authRoute.js ke ander jo humne 4 APIs create ki hain(register, login, logout, get-me) frontend unse kaise interact karega iska code authApi.js(present inside auth->services) ke ander likhte hain.
+
+
+NOTE - here we have to ensure the proper functioning of these layers in such a manner that each of these do not interfere in each other's functioning. 

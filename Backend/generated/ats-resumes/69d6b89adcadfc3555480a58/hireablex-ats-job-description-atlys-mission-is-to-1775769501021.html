@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333333;
+            font-size: 12pt;
+        }
+        .container {
+            width: 8.5in; /* Standard US Letter width */
+            margin: 0 auto;
+            padding: 0.5in;
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 24pt;
+            margin-bottom: 5px;
+            color: #000000;
+        }
+        .contact-info {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 11pt;
+        }
+        .contact-info a {
+            color: #333333;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            font-size: 14pt;
+            text-transform: uppercase;
+            border-bottom: 1px solid #cccccc;
+            padding-bottom: 3px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            color: #000000;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .job-title {
+            font-weight: bold;
+        }
+        .company-location {
+            font-style: italic;
+            color: #555555;
+        }
+        .dates {
+            float: right;
+            font-style: italic;
+            color: #555555;
+        }
+        .project-title {
+            font-weight: bold;
+        }
+        .skill-category {
+            font-weight: bold;
+            margin-top: 5px;
+            margin-bottom: 2px;
+            display: block;
+        }
+        .skills-list {
+            padding-left: 0;
+            list-style: none;
+        }
+        .skills-list li {
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 5px;
+            background-color: #f0f0f0;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 10pt;
+        }
+        .other-item {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1>[CANDIDATE NAME]</h1>
+        <div class="contact-info">
+            <a href="tel:+1234567890">+1 (234) 567-890</a> |
+            <a href="mailto:your.email@example.com">your.email@example.com</a> |
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a>
+        </div>
+
+        <section>
+            <h2>SUMMARY</h2>
+            <p>
+                Passionate and ambitious final-year B.Tech(CS) student with a strong foundation in Python and computer vision fundamentals. Eager to leverage emerging technologies and problem-solving skills to contribute to impactful projects in image quality detection and structured data extraction. Seeking an internship to gain hands-on experience in building and finetuning ML models, running real-world experiments, and automating data processing tasks to drive production impact.
+            </p>
+        </section>
+
+        <section>
+            <h2>EDUCATION</h2>
+            <div>
+                <span class="job-title">Bachelor of Technology in Computer Science</span>
+                <span class="dates">[Graduation Year]</span>
+            </div>
+            <div class="company-location">[University Name], [City, State]</div>
+        </section>
+
+        <section>
+            <h2>PROJECTS</h2>
+            <ul>
+                <li>
+                    <span class="project-title">[Project Name]</span>
+                    <span class="dates">[Year]</span>
+                    <p>
+                        Developed a [brief description of project's purpose]. Utilized [mention relevant technologies/libraries, e.g., PyTorch, OpenCV] for [mention specific ML tasks, e.g., image classification, object detection]. Focused on [mention specific computer vision techniques used].
+                    </p>
+                </li>
+                <li>
+                    <span class="project-title">[Another Project Name]</span>
+                    <span class="dates">[Year]</span>
+                    <p>
+                        Implemented a solution for [brief description of project's purpose]. Leveraged Python for [mention specific tasks, e.g., data preprocessing, model scripting] and explored [mention relevant ML/CV concepts]. Gained experience in [mention skills learned].
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>TECHNICAL SKILLS</h2>
+            <ul class="skills-list">
+                <span class="skill-category">Programming Languages:</span>
+                <li>Python</li>
+
+                <span class="skill-category">Machine Learning & Deep Learning:</span>
+                <li>PyTorch</li>
+                <li>TensorFlow</li>
+                <li>Hugging Face Transformers</li>
+                <li>Computer Vision</li>
+                <li>Image Processing</li>
+                <li>Model Finetuning</li>
+                <li>Data Augmentation</li>
+                <li>ML Experiments</li>
+
+                <span class="skill-category">Libraries & Frameworks:</span>
+                <li>NumPy</li>
+                <li>Pandas</li>
+                <li>OpenCV</li>
+
+                <span class="skill-category">Tools & Concepts:</span>
+                <li>Data Structures & Algorithms (DSA)</li>
+                <li>Structured Data Extraction</li>
+                <li>Model Architectures (e.g., YOLO, U-Net, ResNet - mention familiarity)</li>
+                <li>Version Control (e.g., Git)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>OTHER</h2>
+            <ul class="skills-list">
+                <li class="other-item">Strong problem-solving abilities honed through consistent Data Structures & Algorithms (DSA) practice.</li>
+                <li class="other-item">Curiosity and enthusiasm for learning about LLM/VLM space and finetuning techniques.</li>
+                <li class="other-item">Detail-oriented approach to data validation and model training, ensuring accuracy and reliability.</li>
+                <li class="other-item">Proactive in scripting and automating repetitive tasks to enhance efficiency.</li>
+            </ul>
+        </section>
+
+    </div>
+</body>
+</html>
